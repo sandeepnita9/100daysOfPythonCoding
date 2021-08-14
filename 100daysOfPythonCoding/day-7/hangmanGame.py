@@ -31,7 +31,10 @@ while life <= 5:
                 life -= 1
                 print(ls_blankWord)
                 print(f"You have {life} remaining life \n")
-            print(art.stages[life-1])   
+            if life == 5:
+                print(art.stages[life-1])   
+            else:
+                print(art.stages[life])
         else:
             print("Congratulations You Won")
             break
