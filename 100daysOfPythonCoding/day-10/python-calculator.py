@@ -54,7 +54,7 @@ Continue_Calculation = True
 
 def Calculator(First, num1, num2):
     if First:
-        num1 = int(input("Enter First Number: "))
+        num1 = float(input("Enter First Number: "))
     else:
         num1 = num1
 
@@ -62,7 +62,7 @@ def Calculator(First, num1, num2):
     for key in operators:
         print(key)
     select_Operator = input("Pick any one operator from above list: ")
-    num2 = int(input("Enter Second Number: "))
+    num2 = float(input("Enter Second Number: "))
     Calculation_Function = operators[select_Operator]
     result = Calculation_Function(num1,num2)
     print(f"{num1} {select_Operator} {num2} = {result}")
